@@ -1,0 +1,58 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  background-color: transparent;
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 7 / auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 20px 0;
+  text-align: center;
+  /*Your code here*/
+  /*Span the top row*/
+  display: grid;
+  grid: auto auto auto auto;
+}
