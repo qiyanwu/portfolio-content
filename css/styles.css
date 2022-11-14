@@ -79,9 +79,9 @@ header p{
 }
 
 .images{
-  border: auto;
+  border: solid;
   margin: auto;
-  padding: auto;
+  padding: 10px;
   text-align:center
 }
 
