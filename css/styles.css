@@ -205,8 +205,7 @@ img:hover{
 }
 
 .cssnav {
-    position: absolute;
-    display: flex;
+/*    display: flex;*/
 }
 
 .cssnav li {
@@ -226,15 +225,15 @@ li::before {
     left: 0;
     width: 0;
     height: 100%;
-    border-bottom: 2px solid #000;
-    transition: 0.2s all linear;
+    border-bottom: 6px solid #000;
+    transition: 1s all linear;
 }
 
 li:hover::before {
     width: 100%;
     top: 0;
     left: 0;
-    transition-delay: 0.1s;
+/*    transition-delay: 0.1s;*/
     border-bottom-color: #000;
     z-index: -1;
 }
