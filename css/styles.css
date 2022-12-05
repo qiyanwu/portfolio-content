@@ -79,7 +79,7 @@ header p{
 }
 
 .images{
-  border: solid;
+  
   margin: auto;
   padding: 10px;
   text-align:center
@@ -160,7 +160,17 @@ img:hover{
   /*Align the content in the center */
 }
 
-@media all and (min-width: 800px){
+@media screen and (max-width: 375px) {
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+@media all and (min-width: 768px){
 
   .container{
     /*Your code here */
@@ -194,13 +204,44 @@ img:hover{
 
 }
 
-@media screen and (max-width: 700px) {
-  .container{
+.cssnav {
+    position: absolute;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-
 }
+
+.cssnav li {
+    position: relative;
+    list-style: none;
+    padding: 20px;
+    font-size: 24px;
+    color: #000;
+    line-height: 1;
+    cursor: pointer;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #000;
+    transition: 0.2s all linear;
+}
+
+li:hover::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.1s;
+    border-bottom-color: #000;
+    z-index: -1;
+}
+
+li:hover ~ li::before {
+    left: 0;
+}
+
+
 
